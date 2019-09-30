@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_green_dark"
+            android:gravity="center"
+            android:text="Chương trình quản lý nhân viên"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã phòng ban:  "
+            android:textSize="17sp"/>
+        <EditText
+            android:id="@+id/edtmaphongban"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập mã phòng ban"
+            android:textSize="24sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên phòng ban: "
+            android:textSize="17sp"/>
+        <EditText
+            android:id="@+id/edttenphongban"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tên phòng ban"
+            android:textSize="24sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="243sp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="143sp">
+            <RadioButton
+                android:id="@+id/radnam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nam"
+                android:textSize="24sp"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/radnu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nữ"
+                android:textSize="24sp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnluuthongtin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="luuthongtin"/>
+    <Button
+        android:id="@+id/btnluu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginLeft="143sp"
+        android:text="Lưu phòng ban"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/danhsachphongban"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:background="@android:color/holo_green_dark"
+            android:text="Danh sách phòng ban"
+            android:textColor="@android:color/white" />
+        <Button
+            android:layout_width="113sp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="xóa"
+            android:id="@+id/btnxoa"/>
+        <CheckBox
+            android:id="@+id/chksaveacount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="Lưu thông tin" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>
